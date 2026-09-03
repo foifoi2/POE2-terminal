@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "poe2-alpha-detector"
+version = "0.1.0"
+description = "Early POE2 Reddit trend and alpha detector"
+readme = "README.md"
+requires-python = ">=3.12"
+license = {text = "Private"}
+dependencies = []
+
+[project.scripts]
+poe2-alpha = "poe2_alpha.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

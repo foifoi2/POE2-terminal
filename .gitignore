@@ -3,3 +3,11 @@
 .env.*
 !.env.example
 node_modules/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+.venv/
+data/*.db
+data/*.db-*
+error.log
